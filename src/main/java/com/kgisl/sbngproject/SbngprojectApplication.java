@@ -16,10 +16,10 @@ public class SbngprojectApplication implements WebMvcConfigurer {
 
     @Bean
     public String baseUrl() {
-        String baseUrl = System.getenv("https://sbwithng.onrender.com/users");
+        String baseUrl = System.getenv("http://localhost:8080");
 
         if (baseUrl == null) {
-            baseUrl = "http://localhost:8080";
+            baseUrl = "https://sbwithng.onrender.com/";
         }
 
         return baseUrl;
