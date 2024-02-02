@@ -16,7 +16,7 @@ public class SbngprojectApplication implements WebMvcConfigurer {
 
     @Bean
     public String baseUrl() {
-        String baseUrl = System.getenv("https://sbwithng.onrender.com/");
+        String baseUrl = System.getenv("https://sbwithng.onrender.com/users");
 
         if (baseUrl == null) {
             baseUrl = "http://localhost:8080";
